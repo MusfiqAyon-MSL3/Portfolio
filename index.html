@@ -114,6 +114,78 @@
     </div>
   </section>
 
+<!-- ================= Projects ================= -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <!-- Tabs -->
+    <div class="projects-tabs" role="tablist" aria-label="Project categories">
+      <button class="tab-btn active" data-tab="client">Client / Company Projects</button>
+      <button class="tab-btn" data-tab="uni">Projects for University</button>
+      <button class="tab-btn" data-tab="personal">Personal Projects</button>
+    </div>
+
+    <!-- Client / Company Projects -->
+    <div class="tab-panel" id="tab-client" data-panel>
+      <div class="panel-row">
+        <!-- Demo form -->
+        <form id="client-form" class="project-form" aria-label="Add client project">
+          <h3>Customer / Company Project (Demo)</h3>
+          <div class="form-grid">
+            <input type="text" id="client-company" placeholder="Customer / Company" value="Chaldal.com" required>
+            <input type="text" id="client-title" placeholder="Website / Project Title" value="Chaldal Online Store" required>
+            <input type="date" id="client-date" value="2024-07-10" required>
+            <input type="url" id="client-link" value="https://www.chaldal.com" required>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Add Project</button>
+            <button type="button" id="client-clear" class="btn ghost">Clear Form</button>
+          </div>
+        </form>
+
+        <!-- List -->
+        <div class="client-list-wrapper">
+          <h3>Client Projects</h3>
+          <div id="client-list" class="project-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- University Projects -->
+    <div class="tab-panel hidden" id="tab-uni" data-panel>
+      <div class="project-list-wrapper">
+        <h3>University Projects</h3>
+        <div id="uni-list" class="project-list"></div>
+      </div>
+    </div>
+
+    <!-- Personal Projects -->
+    <div class="tab-panel hidden" id="tab-personal" data-panel>
+      <div class="project-list-wrapper">
+        <h3>Personal Projects</h3>
+        <div id="personal-list" class="project-list"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Preview Modal -->
+  <div id="project-preview-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="preview-title">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h4 id="preview-title">Preview</h4>
+        <button id="close-preview" class="modal-close" aria-label="Close preview">&times;</button>
+      </header>
+      <div class="modal-body" id="preview-body"></div>
+      <footer class="modal-footer">
+        <a id="preview-open" class="btn ghost" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+      </footer>
+    </div>
+  </div>
+</section>
+<!-- ============== end Projects =============== -->
+
   <!-- Notes -->
   <section class="notes" id="notes">
     <div class="container">
